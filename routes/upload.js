@@ -25,7 +25,7 @@ router.post('/create', upload.single('FileInput'), function(req, res, next) {
         Size: file.size,
     }
 
-    res.json(result);
+    res.redirect('/');
 });
 
 module.exports = router;
